@@ -1,3 +1,17 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
 :root {
   /* Colors */
   --grey-900: #141414;
@@ -35,6 +49,12 @@
   font-display: swap;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-preset-1 {
   font-family: var(--font-family);
   font-weight: 700;
@@ -57,6 +77,16 @@
   font-size: 0.875rem;
   line-height: 150%;
   letter-spacing: 0px;
+}
+
+.card-container {
+  width: 90%;
+}
+
+.card {
+  background-color: var(--grey-800);
+  color: var(--white);
+  padding: var(--space-300);
 }
 
 .attribution {
