@@ -99,12 +99,14 @@ body {
   background-color: var(--grey-800);
   color: var(--white);
   padding: var(--space-300);
+  margin: 0 auto;
   border-radius: 12px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  max-width: 24rem;
 }
 
 .card__color-green {
@@ -119,6 +121,11 @@ body {
   border-radius: 50%;
   object-fit: cover;
   width: 88px;
+  margin-bottom: var(--space-300);
+}
+
+.card-info {
+  margin: var(--space-300) 0;
 }
 
 button {
@@ -130,4 +137,9 @@ button {
 
 button + button {
   margin-top: var(--space-200);
+}
+
+button:hover {
+  background-color: var(--green);
+  color: black;
 }
